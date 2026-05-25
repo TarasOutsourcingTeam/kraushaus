@@ -1504,6 +1504,30 @@
     .logo-grid-32 .logo-card:nth-child(n) { grid-column: 1 / 2; }
   }
 
+  .logo-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    background: var(--bg-3);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .logo-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+
+  .logo-card:hover .logo-img img { opacity: 1; }
+
   .logo-placeholder {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -2062,22 +2086,22 @@
       </div>
 
       <div class="logo-card">
-        <div class="logo-placeholder">IDEM</div>
+        <div class="logo-img"><img src="images/idem_logo.jpg" alt="IDEM"></div>
         <div class="logo-name">IDEM</div>
       </div>
 
       <div class="logo-card">
-        <div class="logo-placeholder">YDZ</div>
+        <div class="logo-img"><img src="images/yodezeen_logo.jpg" alt="Yodezeen"></div>
         <div class="logo-name">Yodezeen</div>
       </div>
 
       <div class="logo-card">
-        <div class="logo-placeholder">33</div>
+        <div class="logo-img"><img src="images/33by_logo.png" alt="33BY PRO"></div>
         <div class="logo-name">33BY PRO</div>
       </div>
 
       <div class="logo-card">
-        <div class="logo-placeholder">TP</div>
+        <div class="logo-img"><img src="images/tpucci_logo.png" alt="T. Pucci"></div>
         <div class="logo-name">T. Pucci</div>
       </div>
 
