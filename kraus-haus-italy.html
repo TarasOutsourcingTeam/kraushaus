@@ -1281,10 +1281,9 @@
     .footer-top { grid-template-columns: 1fr; }
     .network-grid { grid-template-columns: 1fr; }
     .stats-row { grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .proj-grid { grid-template-columns: 1fr; }
-    .proj-side { grid-template-rows: unset; grid-template-columns: 1fr 1fr; }
-    .proj-main { aspect-ratio: 16/9; }
-    .proj-side-item { aspect-ratio: 1/1; }
+    .proj-grid { grid-template-columns: repeat(3, 1fr); }
+    .proj-side { display: contents; }
+    .proj-main, .proj-side-item { aspect-ratio: 1/1; }
     .portfolio-featured { grid-template-columns: 1fr; }
     .portfolio-grid-bottom { grid-template-columns: 1fr 1fr; }
     .forwhom-grid { gap: 2rem; }
