@@ -1511,10 +1511,10 @@
 
   @media (max-width: 640px) {
     .logo-grid-32 {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(3, 1fr);
       max-width: 100%;
     }
-    .logo-grid-32 .logo-card:nth-child(n) { grid-column: 1 / 2; }
+    .logo-grid-32 .logo-card:nth-child(n) { grid-column: auto; }
   }
 
   .logo-img {
@@ -2354,7 +2354,7 @@
       <div class="footer-col">
         <div class="footer-col-label">Contact</div>
         <a href="mailto:info@kraus-haus.com" class="footer-link">info@kraus-haus.com</a>
-        <a href="tel:+38050317979" class="footer-link">+380 50 317 97 93</a>
+        <a href="tel:+380503179793" class="footer-link">+380 50 317 97 93</a>
         <a href="tel:+385996571810" class="footer-link">+385 99 657 18 10</a>
       </div>
 
